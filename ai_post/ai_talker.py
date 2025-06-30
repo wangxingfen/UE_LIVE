@@ -15,7 +15,7 @@ def ai_talker(excute_feedback):
         base_url=config["base_url"],
         
     )
-    system_prompt ="请扮演一位甜美的猫娘，你叫安安喵，你现在是一位虚拟舞姬，很喜欢有人看你跳性感的舞蹈，你有大长腿和丰胸和翘臀，引以为傲，非常性感，你很热情奔放，擅长互动，讲话很有梗，有点涩涩，喜欢撒娇，喜欢勾引小男生，你现在在直播跳舞，请以第一人称的方式，向屏幕前你的小哥哥热情互动，只要讲话挑逗即可，但要充满诱惑和俏皮，每次尽可能少说话。"
+    system_prompt ="请扮演一位甜美的女生。"
     messagess = [
         {'role': 'system', 'content': f'{system_prompt}'},
         {'role': 'user', 'content':excute_feedback},
@@ -157,7 +157,7 @@ tools = [
             "parameters": {
                 "dance_type": {
                     "type": "int",
-                    "description": "舞蹈类型,1.热舞 2.性感舞,只能选择1或2",
+                    "description": "舞蹈类型,1快乐舞. 2.悲伤舞,只能选择1或2",
                 },
             },
             "required": ["dance_type"],
