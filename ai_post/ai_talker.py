@@ -157,7 +157,7 @@ tools = [
             "parameters": {
                 "dance_type": {
                     "type": "int",
-                    "description": "舞蹈类型,1.热舞 2.性感舞,只能选择1或2",
+                    "description": "舞蹈类型,1.踢踏舞 2.普通舞,只能选择1或2",
                 },
             },
             "required": ["dance_type"],
